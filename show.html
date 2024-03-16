@@ -120,10 +120,10 @@
   <div class="container results">
     {% if prediction==1 %}
     <h1>Prediction: <span class='danger'>Gotcha! This is a SPAM message.</span></h1>
-    <img class="gif" src="{{ url_for('static', filename='spam.png') }}" alt="SPAM Image">
+    <img class="gif" src="https://raw.githubusercontent.com/shivani-shambhavi/sms-spam-detector/main/spam.png" alt="SPAM Image">
     {% elif prediction==0 %}
     <h1>Prediction: <span class='safe'>Great! This is NOT a spam message.</span></h1>
-    <img class="gif" src="{{ url_for('static', filename='notSpam.png') }}" alt="Not SPAM Image">
+    <img class="gif" src="https://raw.githubusercontent.com/shivani-shambhavi/sms-spam-detector/main/NotSpam.png" alt="Not SPAM Image">
     {% endif %}
   </div>
 
