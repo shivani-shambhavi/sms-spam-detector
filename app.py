@@ -10,14 +10,9 @@ pipe = pickle.load(open("Naive_model.pkl", "rb"))
 def main_function():
     if request.method == "POST":
         text = request.form
-        # print(text)
         emails = text['email']
-        print(emails)
-
         list_email = [emails]
-        # print(list_email)
         output = pipe.predict(list_email)[0]
-        print(output)
 
         return render_template("show.html", prediction=output)
 
