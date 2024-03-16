@@ -13,9 +13,7 @@ def main_function():
         emails = text['email']
         list_email = [emails]
         output = pipe.predict(list_email)[0]
-
         return render_template("show.html", prediction=output)
-
     else:
         return render_template("index.html")
 
